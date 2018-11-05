@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  script  -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+
+  <!--  meta  -->
+  <meta charset="UTF-8" />
+  <title>ABC Company New Customer Form</title>
+
+  <!--  styles  -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1 id="title">Get Paired with the Perfect Playing Partners!</h1>
+  <p id="description">Start improving your match play with the PairPro&reg; automated pairing system.</p>
+
+  <!--  form  -->
+  <form id="survey-form">
+    <p class="form-text">Your Golfer Information</p>
+    <hr>
+    <div class="input-container">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Your Name" required>
+    </div>
+    <div class="input-container">
+      <label id="email-label">Your Email</label>
+      <input id="email" type="email" placeholder="your@email.com" required>
+    </div>
+    <div class="input-container">
+      <label id="zip-label">Zip Code</label>
+      <input id="zip-code" type="text" pattern="[0-9]{5}" placeholder="12345">
+    </div>
+    <div class="input-container">
+      <label id="phone-label">Phone Number</label>
+      <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+    </div>
+    <div class="input-container">
+      <label id="number-label">Your Handicap</label>
+      <input id="number" type="number" min="0" max="41" placeholder="Your Handicap">
+    </div>
+    <div class="dropdown-container">
+      <label id="number-label">Rounds per Month</label>
+      <select id="dropdown">
+        <option value="number-low" name="rounds">1 - 2</option>
+        <option value="number-medium" name="rounds">3 - 7</option>
+        <option value="number-high" name="rounds">8 - 15</option>
+        <option value="number-max" name="rounds">16 +</option>
+      </select>
+    </div>
+    <hr>
+    <div class="radio-container">
+      <p class="form-text">Your Auto-Pairing Preference</p>
+      <label for="yes"><input id="yes" type="radio" name="auto-pair" value="yes">Auto-Pair Me</label>
+      <label for="no"><input id="no" type="radio" name="auto-pair" value="no">Let Me Manually Select</label>
+    </div>
+    <hr>
+    <div class="check-container">
+      <p class="form-text">Contact Method</p>
+      <label><input type="checkbox" name="contact" value="Email">Email</label>
+      <label><input type="checkbox" name="contact" value="Phone">Phone</label>
+      <label><input type="checkbox" name="contact" value="SMS">SMS</label>
+    </div>
+    <div class="input-container">
+      <textarea name="comments">Enter any additional comments or information.</textarea>
+    </div>
+
+    <!-- submit button -->
+     <button id="submit" type="submit">Submit</button>
+  </form>
+
+  <!-- sign-in -->
+  <div class="sign-in">
+    <p>Already have an account? <a href="#0">Sign in.</a></p>
+  </div>
+  <!-- svg attribution -->
+  <div class="footer">
+    <p>I customized the background on my homepage at <a href="https://www.svgbackgrounds.com">SVGBackgrounds.com.</a></p>
+  </div>
+</body>
+</html>
