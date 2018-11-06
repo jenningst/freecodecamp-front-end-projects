@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+}
+
+.main-content {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.section-header {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background: green;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-areas: 
+        "feature feature"
+        "feature feature";
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+
+    background: yellow;
+}
+
+.feature-item {
+    /* flex-basis: 300px;
+    min-width: 200px;
+    flex-shrink: 0;
+    height: 300px;
+    flex-grow: 1; */
+}
+
+.feature-item:nth-of-type(even) {
+    background: grey;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    margin: 15px auto 10px auto;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    
+    .transient {
+        display: none;
+    }
+  }
