@@ -8,7 +8,8 @@
 
     <!--  script  -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
     <!-- styles -->
     <link rel="stylesheet" href="css/main.css">
@@ -16,172 +17,160 @@
     <title>Document</title>
 </head>
 <body>
-<!-- header -->
-<header id="header">
-    <!-- nav bar -->
-    <nav id="nav-bar">
-        <div class="nav-header">
-            <div class="nav-title">
-                <img id="header-img" src="#0">
+    <!-- header -->
+    <header id="header">
+        <!-- nav bar -->
+        <nav id="nav-bar">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <img id="header-img" src="#0">
+                </div>
             </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-        <input type="checkbox" id="nav-check">
-        <div class="nav-links">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#features" class="nav-link">Features</a>
-            <a href="#customers" class="nav-link">Customer Stories</a>
-            <a href="#about" class="nav-link">About Us</a>
-        </div>
-    </nav>
-</header>
-<!-- main content-->
-<div class="main-content">
-    <a name="home">
-    <!-- main content-->
-    <div class="tagline-content">
-        <h1>Where Work Happens</h1>
-        <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    </div>
-    <div class="main-content">
-        <!-- submission form -->
-        <form id="form" action="https://www.freecodecamp.com/email-submit" target="_self">
-            <input id="email" type="email" placeholder="Your Email">
-            <input id="submit" type="submit" value="GET STARTED">
-        </form>
-        <!-- hero image -->
-        <div class=image-container>
-            <img src="" alt="">
-        </div>
-    </div>
-    <!-- feature content -->
-    <div class="main-content">
-        <div class="section-header">
-            <h2>The hub for your team and your work</h2>
-            <h3 class="transient">Slack is a place where your team comes together to collaborate, important information can be found by the right people, and your tools pipe in information when and where you need it.</h3>
-        </div>
-        <!-- feature items -->
-        <div class="feature-container">
-            <div class="feature-item">
-            <img src="" alt="">
-            <h3>Channels</h3>
-            <p>Communication in Slack happens in channels, organized by project, topic, team, or whatever makes sense for you.</p>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
-            <div class="feature-item">
-                <img src="" alt="">
-                <h3>Search</h3>
-                <p>LConversations in Slack are searchable by everyone, so you can tap into company knowledge and find information when you need it.</p>
+            <input type="checkbox" id="nav-check">
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#customers" class="nav-link">Customer Stories</a>
+                <a href="#about" class="nav-link">About Us</a>
             </div>
-            <div class="feature-item">
-                <img src="" alt="">
-                <h3>Integrations</h3>
-                <p>Slack works with the tools and services you already use every day. Pipe in information or take action without leaving Slack.</p>
-            </div>
-            <div class="feature-item">
-                <img src="" alt="">
-                <h3>Integrations</h3>
-                <p>Slack works with the tools and services you already use every day. Pipe in information or take action without leaving Slack.</p>
-            </div>
+        </nav>
+    </header>
+    <!-- main content -->
+    <main>
+        <!-- main content text -->
+        <div class="main-content">
+            <a name="home"></a>
+            <h1 class="styled-heading">Where Work Happens</h1>
+            <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
         </div>
-    </div>
-    <a href="#0">Learn more about our features.</a>
-    <!-- case study content -->
-    <div class="main-content">
-        <a name="customers">
-        <h2>You're in good company</h2>
-        <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-        <!-- case study items -->
-        <div class="case-item">
-            <h3>LVMH/Benefit Cosmetics</h3>
-            <h1>Beautifying the world with a wink and a smile (and Slack).</h1>
-            <div class="img-div">
+        <!-- form -->
+        <div class="form-content">
+            <!-- submission form -->
+            <form id="form" action="https://www.freecodecamp.com/email-submit" target="_self">
+                <input id="email" type="email" placeholder="Your Email">
+                <input id="submit" type="submit" value="GET STARTED">
+            </form>
+            <!-- hero image -->
+            <div class=image-container>
                 <img src="" alt="">
             </div>
-            <div class="case-footer">
-                <h2>READ STORY</h2>
-                <img src="#0" alt="">
+        </div>
+        <!-- features -->
+        <!-- sub content text -->
+        
+        <!-- feature content -->
+        <div class="feature-content">
+            <div class="sub-content centered-content ">
+                <h2 class="styled-heading">The hub for your team and your work</h2>
+                <p class="transient">Slack is a place where your team comes together to collaborate, important information can be found by the right people, and your tools pipe in information when and where you need it.</p>
+            </div>
+            <div class="feature-flex-container">
+                <!-- feature items -->
+                <div class="feature-flex-item">
+                    <img src="" alt="">
+                    <p class="bolded">Channels</p>
+                    <p>Communication in Slack happens in channels, organized by project, topic, team, or whatever makes sense for you.</p>
+                </div>
+                <div class="feature-flex-item">
+                    <img src="" alt="">
+                    <h3 class="bolded">Search</h3>
+                    <p>Conversations in Slack are searchable by everyone, so you can tap into company knowledge and find information when you need it.</p>
+                </div>
             </div>
         </div>
-        <div class="case-item">
-            <h3>Away</h3>
-            <h1>Bringing the ideal suitcase to market with Slack.</h1>
-            <div class="img-div">
-                <img src="" alt="">
+        <!-- learn more -->
+        <div class="centered-content learn-more">
+            <a href="#0">Learn more about our features.</a>
+        </div>
+        <!-- case study content -->
+        <div class="case-content">
+            <a name="customers"></a>
+            <div class="centered-content sub-content">
+                <h2 class="styled-heading">You're in good company</h2>
+                <p>Millions of people around the world have already made Slack the place where their work happens.</p>
             </div>
-            <div class="case-footer">
-                <h2>READ STORY</h2>
-                <img src="#0" alt="">
+            <div class="case-flex-container">
+                <!-- case study items -->
+                <div class="case-flex-item">
+                    <h3>LVMH/Benefit Cosmetics</h3>
+                    <h1 class="styled-heading">Beautifying the world with a wink and a smile (and Slack).</h1>
+                    <div class="case-img-div">
+                        <img class="case-image" src="https://images.pexels.com/photos/395132/pexels-photo-395132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    </div>
+                    <div class="case-link">
+                        <h2>READ STORY</h2>
+                    </div>
+                </div>
+                <div class="case-flex-item">
+                    <h3>Away</h3>
+                    <h1 class="styled-heading">Bringing the ideal suitcase to market with Slack.</h1>
+                    <div class="case-img-div">
+                        <img class="case-image" src="https://images.pexels.com/photos/1478477/pexels-photo-1478477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    </div>
+                    <div class="case-link">
+                        <h2>READ STORY</h2>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- logos -->
-    <div class="main-content">
-        <div class="logo-item">
-            <img src="#0" alt="">
+        <!-- get started content -->
+        <div class="centered-content get-started">
+            <h1 class="styled-heading">Try Slack with your team for free</h1>
+            <input id="submit-get-started" type="submit" value="GET STARTED">
         </div>
-        <div class="logo-item">
-            <img src="#0" alt="">
-        </div>
-        <div class="logo-item">
-            <img src="#0" alt="">
-        </div>
-    </div>
-    <!-- get started content -->
-    <div class="main-content">
-        <h1>Try X with your team for free</h1>
-        <input id="submit-get-started" type="submit" value="GET STARTED">
-    </div>
-    <footer>
-        <a name="about">
-        <!-- company info nav -->
-        <div class="footer-nav">
-            <p>COMPANY</p>
-            <ul>
-                <li>About Us</li>
-                <li>Careers</li>
-                <li>Blog</li>
-                <li>Press</li>
-            </ul>
-        </div>
-        <div class="footer-nav">
-            <p>PRODUCT</p>
-            <ul>
-                <li>Customer Stories</li>
-                <li>Pricing</li>
-                <li>Security</li>
-                <li>Why Company?</li>
-            </ul>
-        </div>
-        <div class="footer-nav">
-            <p>RESOURCES</p>
-            <ul>
-                <li>Help Center</li>
-                <li>Partners</li>
-                <li>API</li>
-                <li>Download</li>
-            </ul>
-        </div>
-        <!-- social content -->
-        <div class="social-content">
-            <div class="t&c-nav">
-                <p>Status</p>
-                <p>Privacy & Terms</p>
-                <p>Contact Us</p>
+    </main>
+    <!-- footer nav -->
+    <footer class="footer-nav">
+        <a name="about"></a>
+        <div class="footer-grid">
+            <!-- nav items -->
+            <div class="footer-nav-box">
+                <div class="about-box">
+                    <p class="bolded">COMPANY</p>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Blog</li>
+                        <li>Press</li>
+                    </ul>
+                </div>
             </div>
-            <div class="social-nav">
-                <img src="#0" alt="">
-                <img src="#0" alt="">
-                <img src="#0" alt="">
-                <img src="#0" alt="">
+            <div class="footer-nav-box">
+                <div class="about-box">
+                    <p class="bolded">PRODUCT</p>
+                    <ul>
+                        <li>Customer Stories</li>
+                        <li>Pricing</li>
+                        <li>Security</li>
+                        <li>Why Company?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="centered-content attribution">
+            <div>Background made by <a href="https://svgbackgrounds.com/" title="SVGBackgrounds">SVGBackgrounds</a> from <a href="https://svgbackgrounds.com/" title="SVGBackgrounds">www.svgbackgrounds.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 4.0 BY</a></div>    
+        </div>
+        <!-- misc content -->
+        <div class="misc-content">
+            <div class="misc-container">
+                <div class="misc-item">
+                    <a href="#0" class="bolded">Status</a>
+                </div>
+                <div class="misc-item">
+                    <a href="#0" class="bolded">Privacy & Terms</a>
+                </div>
+                <div class="misc-item">
+                    <a href="#0" class="bolded">Contact Us</a>
+                </div>
             </div>
         </div>
     </footer>
-    </div>
-</div>
 </body>
 </html>
