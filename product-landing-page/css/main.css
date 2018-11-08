@@ -22,6 +22,32 @@
     justify-content: center;
     align-items: center;
 }
+
+#nav-bar {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nav-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+/* Nav bar stickiness -------------------------------------------------*/
+
+#nav-bar {
+    overflow: hidden;
+    position: fixed;
+    background: white;
+    top: 0;
+    width: 100%
+}
+
+.main {
+    margin-top: 30px;
+}
   
 /* Generic styles ----------------------------------------------*/
 body {
@@ -51,8 +77,24 @@ body {
     text-align: center;
 }
 
+.nav-logo {
+    padding: 2% 0% 2% 2%;
+    width: 10%;
+}
+
+.nav-links {
+    width: 90%;
+    padding: 2% 2% 2% 0%;
+}
+
+.link-item {
+    margin-left: 2%;
+    margin-right: 2%
+}
+
 .attribution {
     font-size: .5em;
+    margin-bottom: 3em;
 }
 
 .main-content, .sub-content {
@@ -64,6 +106,7 @@ body {
 }
 
 .main-content h1 {
+    margin-top: 2em;
     font-size: 4rem;
     color: black;
 }
@@ -74,6 +117,7 @@ body {
 
 .sub-content {
     text-align: center;
+    color: black;
 }
 
 .learn-more {
@@ -82,12 +126,11 @@ body {
     margin: 0% auto 10% auto;
 }
 
-form {
-}
-
 .feature-flex-container {
     max-width: 930px;
     margin: 0% auto 3% auto;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .case-flex-container {
@@ -113,16 +156,19 @@ form {
 .case-flex-item h1 {
     font-size: 1.75em;
     padding: 0% 4% 0% 4%;
+    color: black;
 }
 
 .case-flex-item h2 {
     margin: 0;
     padding: 4%;
     text-align: center;
+    color: black;
 }
 
 .case-flex-item h3  {
     padding: 0% 4% 0% 4%;
+    color: black;
 }
 
 .case-link {
