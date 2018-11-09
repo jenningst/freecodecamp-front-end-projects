@@ -5,34 +5,27 @@
 }
 
 /* Flex styles -------------------------------------------------*/
-.feature-flex-container {
+.flex {
     display: flex;
-    flex-flow: row wrap;
 }
 
-.case-flex-container {
+.flex--wrap {
+    flex-wrap: nowrap;
+}
+
+.flex--no-wrap {
+    flex-wrap: wrap;
+}
+
+.o-flex-container-wrap {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.misc-container {
-    display: flex;
-    flex-flow: row nowrap;
+.footer__link {
     justify-content: center;
     align-items: center;
-}
-
-#nav-bar {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.nav-links {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-content: center;
 }
 
 /* Nav bar stickiness -------------------------------------------------*/
@@ -77,7 +70,7 @@ body {
     text-align: center;
 }
 
-.nav-logo {
+.logo {
     padding: 2% 0% 2% 2%;
     width: 10%;
 }
@@ -230,7 +223,7 @@ input[type="submit"] {
     padding-bottom: 2%;
 }
 
-.misc-item {
+.footer__link__item {
     margin: 0px 15px 0px 15px;
 }
 
