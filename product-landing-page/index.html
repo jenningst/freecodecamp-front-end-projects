@@ -5,156 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <!--  script  -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-
     <!-- styles -->
     <link rel="stylesheet" href="css/main.css">
-
     <title>Document</title>
 </head>
 <body>
     <!-- header -->
-    <header id="header">
+    <header id="header" class="header-wrapper">
         <!-- nav bar -->
-        <nav id="nav-bar" class="nav nav--header header flex flex--no-wrap">
-            <div class="header__logo">
-                <img id="header-img" src="#0">
-            </div>
-            <div class="header__links flex flex--no-wrap">
-                <div class="link-item"><a href="#features" class="nav-link">Features</a></div>
-                <div class="link-item"><a href="#customers" class="nav-link">Customer Stories</a></div>
-                <div class="link-item"><a href="#about" class="nav-link">About Us</a></div>
+        <nav id="nav-bar" class="nav nav--wrapper flex flex--no-wrap">
+            <img id="b.header-img" class="nav__logo" src="#0">
+            <div class="b.nav__menu flex flex--no-wrap">
+                <div class="nav-link e.link-item"><a href="#features">Features</a></div>
+                <div class="nav-link e.link-item"><a href="#customers">Customer Stories</a></div>
+                <div class="nav-link e.link-item"><a href="#about">About Us</a></div>
             </div>
         </nav>
     </header>
     <!-- main content -->
-    <main>
+    <main class="main main-wrapper">
         <!-- main content text -->
-        <div class="main-content">
+        <div class="headline">
             <a name="home"></a>
-            <h1 class="styled-heading">Where Work Happens</h1>
-            <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+            <h1 class="headline__heading styled-heading">Where Work Happens</h1>
+            <p class="headline__input">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
         </div>
         <!-- form -->
-        <div class="form-content">
-            <!-- submission form -->
-            <form id="form" action="https://www.freecodecamp.com/email-submit" target="_self">
-                <input id="email" type="email" placeholder="Your Email">
-                <input id="submit" type="submit" value="GET STARTED">
-            </form>
-            <!-- hero image -->
-            <div class=image-container>
-                <img src="" alt="">
-            </div>
-        </div>        
+        <!-- submission form -->
+        <form id="form" class="cta-form" action="https://www.freecodecamp.com/email-submit" target="_self">
+            <input id="email" class="form__input" type="email" placeholder="Your Email">
+            <input id="submit" class="form__input" type="submit" value="GET STARTED">
+        </form>
+        <!-- hero image -->
+        <div class=image-wrapper>
+            <img class="hero" src="" alt="">
+        </div>
         <!-- feature content -->
-        <div class="feature-content">
+        <div class="feature-wrapper">
             <a name="features"></a>
-            <div class="sub-content centered-content ">
-                <h2 class="styled-heading">The hub for your team and your work</h2>
-                <p class="transient">Slack is a place where your team comes together to collaborate, important information can be found by the right people, and your tools pipe in information when and where you need it.</p>
+            <div class="reinforcement-statement centered ">
+                <h2 class="reinforcement-statement__heading styled-heading">The hub for your team and your work</h2>
+                <p class="reinforcement-statement__text transient">Slack is a place where your team comes together to collaborate, important information can be found by the right people, and your tools pipe in information when and where you need it.</p>
             </div>
             <div class="flex flex--wrap">
                 <!-- feature items -->
-                <div class="feature-flex-item">
-                    <img src="" alt="">
-                    <p class="bolded">Channels</p>
-                    <p>Communication in Slack happens in channels, organized by project, topic, team, or whatever makes sense for you.</p>
+                <div class="feature-card">
+                    <img class="feature-card__figure" src="" alt="">
+                    <p class="feature-card__heading bolded">Channels</p>
+                    <p class="feature-card__text">Communication in Slack happens in channels, organized by project, topic, team, or whatever makes sense for you.</p>
                 </div>
-                <div class="feature-flex-item">
-                    <img src="" alt="">
-                    <h3 class="bolded">Search</h3>
-                    <p>Conversations in Slack are searchable by everyone, so you can tap into company knowledge and find information when you need it.</p>
+                <div class="feature-card">
+                    <img class="feature-card__figure" src="" alt="">
+                    <p class="feature-card__heading bolded">Search</p>
+                    <p class="feature-card__text">Conversations in Slack are searchable by everyone, so you can tap into company knowledge and find information when you need it.</p>
                 </div>
             </div>
         </div>
-        <!-- learn more -->
-        <div class="centered-content learn-more">
-            <a href="#0">Learn more about our features.</a>
-        </div>
         <!-- case study content -->
-        <div class="case-content">
+        <div class="social-proof-wrapper">
             <a name="customers"></a>
-            <div class="centered-content sub-content">
-                <h2 class="styled-heading">You're in good company</h2>
-                <p>Millions of people around the world have already made Slack the place where their work happens.</p>
+            <div class="reinforcement-statement centered">
+                <h2 class="reinforcement-statement__heading styled-heading">You're in good company</h2>
+                <p class="reinforcement-statement__text">Millions of people around the world have already made Slack the place where their work happens.</p>
             </div>
             <div class="flex flex--wrap">
                 <!-- case study items -->
-                <div class="case-flex-item">
-                    <h3>LVMH/Benefit Cosmetics</h3>
-                    <h1 class="styled-heading">Beautifying the world with a wink and a smile (and Slack).</h1>
-                    <div class="case-img-div">
-                        <img class="case-image" src="https://images.pexels.com/photos/395132/pexels-photo-395132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                    </div>
-                    <div class="case-link">
-                        <h2>READ STORY</h2>
-                    </div>
+                <div class="social-proof-card">
+                    <p class="social-proof-card__title">LVMH/Benefit Cosmetics</p>
+                    <p class="social-proof-card__heading styled-heading">Beautifying the world with a wink and a smile (and Slack).</p>
+                    <img class="social-proof-card__figure" src="https://images.pexels.com/photos/395132/pexels-photo-395132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p class="social-proof-card__link"><a href="#0">READ STORY</a></p>
                 </div>
-                <div class="case-flex-item">
-                    <h3>Away</h3>
-                    <h1 class="styled-heading">Bringing the ideal suitcase to market with Slack.</h1>
-                    <div class="case-img-div">
-                        <img class="case-image" src="https://images.pexels.com/photos/1478477/pexels-photo-1478477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                    </div>
-                    <div class="case-link">
-                        <h2>READ STORY</h2>
-                    </div>
+                <div class="social-proof-card">
+                    <p class="social-proof-card__title">Away</p>
+                    <p class="social-proof-card__heading styled-heading">Bringing the ideal suitcase to market with Slack.</p>                    <img class="social-proof-card__figure" src="https://images.pexels.com/photos/1478477/pexels-photo-1478477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p class="social-proof-card__link"><a href="#0">READ STORY</a></p>
                 </div>
             </div>
         </div>
-        <!-- get started content -->
-        <div class="centered-content get-started">
-            <h1 class="styled-heading">Try Slack with your team for free</h1>
-            <input id="submit-get-started" type="submit" value="GET STARTED">
-        </div>
+        <!-- get started form -->
+        <form class="cta-form" action="https://www.freecodecamp.com/email-submit" target="_self">
+            <p class="form__text styled-heading">Try Slack with your team for free</p>
+            <input id="submit-get-started" class="form__input" type="submit" value="GET STARTED">
+        </form>
     </main>
     <!-- footer nav -->
-    <footer class="footer-nav">
+    <footer class="footer-wrapper">
         <a name="about"></a>
-        <div class="footer-grid">
+        <div class="footer-grid-wrapper">
             <!-- nav items -->
-            <div class="footer-nav-box">
-                <div class="about-box">
-                    <p class="bolded">COMPANY</p>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Careers</li>
-                        <li>Blog</li>
-                        <li>Press</li>
-                    </ul>
-                </div>
+            <div class="link-box">
+                <p class="link-box__title">COMPANY</p>
+                <ul>
+                    <li class="link-box__link">About Us</li>
+                    <li class="link-box__link">Careers</li>
+                    <li class="link-box__link">Blog</li>
+                    <li class="link-box__link">Press</li>
+                </ul>
             </div>
-            <div class="footer-nav-box">
-                <div class="about-box">
-                    <p class="bolded">PRODUCT</p>
-                    <ul>
-                        <li>Customer Stories</li>
-                        <li>Pricing</li>
-                        <li>Security</li>
-                        <li>Why Company?</li>
-                    </ul>
-                </div>
+            <div class="link-box">
+                <p class="link-box__title">PRODUCT</p>
+                <ul>
+                    <li class="link-box__link">Customer Stories</li>
+                    <li class="link-box__link">Pricing</li>
+                    <li class="link-box__link">Security</li>
+                    <li class="link-box__link">Why Company?</li>
+                </ul>
             </div>
         </div>
-        <div class="centered-content attribution">
+        <div class="attribution centered">
             <div>Background made by <a href="https://svgbackgrounds.com/" title="SVGBackgrounds">SVGBackgrounds</a> from <a href="https://svgbackgrounds.com/" title="SVGBackgrounds">www.svgbackgrounds.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 4.0 BY</a></div>    
-        </div>
-        <!-- misc content -->
-        <div class="footer__link flex flex--no-wrap">
-            <div class="footer__link__item">
-                <a href="#0" class="bolded">Status</a>
-            </div>
-            <div class="footer__link__item">
-                <a href="#0" class="bolded">Privacy & Terms</a>
-            </div>
-            <div class="footer__link__item">
-                <a href="#0" class="bolded">Contact Us</a>
-            </div>
         </div>
     </footer>
 </body>

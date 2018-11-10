@@ -17,16 +17,20 @@
     flex-wrap: wrap;
 }
 
-.o-flex-container-wrap {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
 .footer__link {
     justify-content: center;
     align-items: center;
 }
+
+
+/* Block -------------------------------------------------------------*/
+
+
+/* Element -----------------------------------------------------------*/
+
+
+/* Modifier -----------------------------------------------------------*/
+
 
 /* Nav bar stickiness -------------------------------------------------*/
 
@@ -66,7 +70,7 @@ body {
     font-weight: 600;
 }
 
-.centered-content {
+.centered {
     text-align: center;
 }
 
@@ -90,25 +94,25 @@ body {
     margin-bottom: 3em;
 }
 
-.main-content, .sub-content {
+.tagline, .reinforcement-statement {
     margin: 2% 6% 4% 6%;
 }
 
-.main-content {
+.tagline {
     text-align: left;
 }
 
-.main-content h1 {
+.tagline h1 {
     margin-top: 2em;
     font-size: 4rem;
     color: black;
 }
 
-.main-content p {
+.tagline p {
     font-size: 1.25rem;
 }
 
-.sub-content {
+.reinforcement-statement {
     text-align: center;
     color: black;
 }
@@ -131,14 +135,14 @@ body {
     margin: 0px auto 0px;
 }
 
-.case-flex-item {
+.social-proof-card {
     border-radius: 3px;
     box-shadow: 2px 2px 15px #efefef;
     max-width: 450px;
     margin: 20px;
 }
 
-.case-image {
+.social-proof-card__figure {
     max-width: 100%;
     height: auto;
     display: block;
@@ -146,20 +150,20 @@ body {
     position: relative;
 }
 
-.case-flex-item h1 {
+.social-proof-card h1 {
     font-size: 1.75em;
     padding: 0% 4% 0% 4%;
     color: black;
 }
 
-.case-flex-item h2 {
+.social-proof-card h2 {
     margin: 0;
     padding: 4%;
     text-align: center;
     color: black;
 }
 
-.case-flex-item h3  {
+.social-proof-card h3  {
     padding: 0% 4% 0% 4%;
     color: black;
 }
