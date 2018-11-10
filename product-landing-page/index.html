@@ -17,13 +17,11 @@
     <!-- header -->
     <header id="header" class="header-wrapper">
         <!-- nav bar -->
-        <nav id="nav-bar" class="nav nav--wrapper flex flex--no-wrap">
-            <img id="b.header-img" class="nav__logo" src="#0">
-            <div class="b.nav__menu flex flex--no-wrap">
-                <div class="nav-link e.link-item"><a href="#features">Features</a></div>
-                <div class="nav-link e.link-item"><a href="#customers">Customer Stories</a></div>
-                <div class="nav-link e.link-item"><a href="#about">About Us</a></div>
-            </div>
+        <nav id="nav-bar" class="nav nav-menu flex flex--no-wrap">
+            <img id="header-img" class="nav-menu__logo" src="#0">
+            <div class="nav-link nav-menu__link"><a href="#features">Features</a></div>
+            <div class="nav-link nav-menu__link"><a href="#customers">Customer Stories</a></div>
+            <div class="nav-link nav-menu__link"><a href="#about">About Us</a></div>
         </nav>
     </header>
     <!-- main content -->
@@ -44,35 +42,33 @@
         <div class=image-wrapper>
             <img class="hero" src="" alt="">
         </div>
+        <a name="features"></a>
+        <div class="reinforcement-statement--centered ">
+            <h2 class="reinforcement-statement__heading styled-heading">The hub for your team and your work</h2>
+            <p class="reinforcement-statement__text transient">Slack is a place where your team comes together to collaborate, important information can be found by the right people, and your tools pipe in information when and where you need it.</p>
+        </div>
         <!-- feature content -->
-        <div class="feature-wrapper">
-            <a name="features"></a>
-            <div class="reinforcement-statement centered ">
-                <h2 class="reinforcement-statement__heading styled-heading">The hub for your team and your work</h2>
-                <p class="reinforcement-statement__text transient">Slack is a place where your team comes together to collaborate, important information can be found by the right people, and your tools pipe in information when and where you need it.</p>
+        <div class="feature-callout flex flex--wrap">
+            <!-- feature items -->
+            <div class="feature-card">
+                <img class="feature-card__figure" src="" alt="">
+                <p class="feature-card__heading bolded">Channels</p>
+                <p class="feature-card__text">Communication in Slack happens in channels, organized by project, topic, team, or whatever makes sense for you.</p>
             </div>
-            <div class="flex flex--wrap">
-                <!-- feature items -->
-                <div class="feature-card">
-                    <img class="feature-card__figure" src="" alt="">
-                    <p class="feature-card__heading bolded">Channels</p>
-                    <p class="feature-card__text">Communication in Slack happens in channels, organized by project, topic, team, or whatever makes sense for you.</p>
-                </div>
-                <div class="feature-card">
-                    <img class="feature-card__figure" src="" alt="">
-                    <p class="feature-card__heading bolded">Search</p>
-                    <p class="feature-card__text">Conversations in Slack are searchable by everyone, so you can tap into company knowledge and find information when you need it.</p>
-                </div>
+            <div class="feature-card">
+                <img class="feature-card__figure" src="" alt="">
+                <p class="feature-card__heading bolded">Search</p>
+                <p class="feature-card__text">Conversations in Slack are searchable by everyone, so you can tap into company knowledge and find information when you need it.</p>
             </div>
         </div>
         <!-- case study content -->
-        <div class="social-proof-wrapper">
+        <div class="social-proof-callout">
             <a name="customers"></a>
-            <div class="reinforcement-statement centered">
+            <div class="reinforcement-statement--centered">
                 <h2 class="reinforcement-statement__heading styled-heading">You're in good company</h2>
                 <p class="reinforcement-statement__text">Millions of people around the world have already made Slack the place where their work happens.</p>
             </div>
-            <div class="flex flex--wrap">
+            <div class="social-proof-gallery flex flex--wrap">
                 <!-- case study items -->
                 <div class="social-proof-card">
                     <p class="social-proof-card__title">LVMH/Benefit Cosmetics</p>
@@ -88,9 +84,9 @@
             </div>
         </div>
         <!-- get started form -->
-        <form class="cta-form" action="https://www.freecodecamp.com/email-submit" target="_self">
-            <p class="form__text styled-heading">Try Slack with your team for free</p>
-            <input id="submit-get-started" class="form__input" type="submit" value="GET STARTED">
+        <form class="trial-form" action="https://www.freecodecamp.com/email-submit" target="_self">
+            <p class="trial-form__text styled-heading">Try Slack with your team for free</p>
+            <input id="submit-get-started" class="trial-form__input" type="submit" value="GET STARTED">
         </form>
     </main>
     <!-- footer nav -->
@@ -117,7 +113,7 @@
                 </ul>
             </div>
         </div>
-        <div class="attribution centered">
+        <div class="attribution--centered">
             <div>Background made by <a href="https://svgbackgrounds.com/" title="SVGBackgrounds">SVGBackgrounds</a> from <a href="https://svgbackgrounds.com/" title="SVGBackgrounds">www.svgbackgrounds.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 4.0 BY</a></div>    
         </div>
     </footer>
