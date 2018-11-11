@@ -1,0 +1,50 @@
+/**********
+
+This stylesheet is written in BEM
+
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier / .block--modifier
+
+**********/
+
+/* Blocks *********************************************************************/
+nav {
+    background: #4c5264;
+}
+
+.main-section {
+    color: #373737;
+}
+
+/* Elements *******************************************************************/
+
+
+/* Modifiers ******************************************************************/
+
+
+/* Generic Styles ************************************************************/
+body {
+    margin: 0px;
+    color: #f2f2f2;
+}
+
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.main {
+    margin-left: 160px;
+    background: #2b2f3e;
+    height: 100%;
+}
+
+.main-section {
+    color: #f2f2f2;
+}
