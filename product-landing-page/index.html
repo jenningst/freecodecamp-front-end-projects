@@ -19,36 +19,40 @@
         <!-- nav bar -->
         <nav id="nav-bar" class="nav nav-menu flex flex--no-wrap">
             <img id="header-img" class="nav-menu__logo" src="#0">
-            <div class="nav-link nav-menu__link"><a href="#features">Features</a></div>
-            <div class="nav-link nav-menu__link"><a href="#customers">Customer Stories</a></div>
-            <div class="nav-link nav-menu__link"><a href="#about">About Us</a></div>
+            <a class="nav-link link nav-menu__link" href="#features">Features</a>
+            <a class="nav-link link nav-menu__link" href="#customers">Customer Stories</a>
+            <a class="nav-link link nav-menu__link" href="#about">About Us</a>
         </nav>
     </header>
     <!-- main content -->
     <main class="main main-wrapper">
         <!-- main content text -->
         <div class="headline">
-            <a name="home"></a>
             <h1 class="headline__heading styled-heading">Where Work Happens</h1>
-            <p class="headline__input">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+            <p class="headline__text">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
         </div>
-        <!-- form -->
-        <!-- submission form -->
-        <form id="form" class="cta-form" action="https://www.freecodecamp.com/email-submit" target="_self">
-            <input id="email" class="form__input" type="email" placeholder="Your Email">
-            <input id="submit" class="form__input" type="submit" value="GET STARTED">
-        </form>
-        <!-- hero image -->
-        <div class=image-wrapper>
-            <img class="hero" src="" alt="">
+        <div class="main-banner flex flex--wrap">
+            <!-- hero video -->
+            <div class=video-wrapper>
+                <video id="video" width="400" controls>
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <!-- submission form -->
+            <form id="form" class="cta-form" action="https://www.freecodecamp.com/email-submit" target="_self">
+                <input id="email" class="form__input" name="email" type="email" placeholder="Your Email">
+                <input type="submit" id="submit" form="form" class="form__input" value="Submit">
+            </form>
         </div>
+        <!-- feature content -->
         <a name="features"></a>
-        <div class="reinforcement-statement--centered ">
+        <div class="reinforcement-statement--centered">
             <h2 class="reinforcement-statement__heading styled-heading">The hub for your team and your work</h2>
             <p class="reinforcement-statement__text transient">Slack is a place where your team comes together to collaborate, important information can be found by the right people, and your tools pipe in information when and where you need it.</p>
         </div>
-        <!-- feature content -->
-        <div class="feature-callout flex flex--wrap">
+        <section id="features" class="feature-callout flex flex--wrap">
             <!-- feature items -->
             <div class="feature-card">
                 <img class="feature-card__figure" src="" alt="">
@@ -60,10 +64,9 @@
                 <p class="feature-card__heading bolded">Search</p>
                 <p class="feature-card__text">Conversations in Slack are searchable by everyone, so you can tap into company knowledge and find information when you need it.</p>
             </div>
-        </div>
+        </section>
         <!-- case study content -->
-        <div class="social-proof-callout">
-            <a name="customers"></a>
+        <section id="customers" class="social-proof-callout">
             <div class="reinforcement-statement--centered">
                 <h2 class="reinforcement-statement__heading styled-heading">You're in good company</h2>
                 <p class="reinforcement-statement__text">Millions of people around the world have already made Slack the place where their work happens.</p>
@@ -72,45 +75,42 @@
                 <!-- case study items -->
                 <div class="social-proof-card">
                     <p class="social-proof-card__title">LVMH/Benefit Cosmetics</p>
-                    <p class="social-proof-card__heading styled-heading">Beautifying the world with a wink and a smile (and Slack).</p>
+                    <p class="social-proof-card__heading">Beautifying the world with a wink and a smile (and Slack).</p>
                     <img class="social-proof-card__figure" src="https://images.pexels.com/photos/395132/pexels-photo-395132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
                     <p class="social-proof-card__link"><a href="#0">READ STORY</a></p>
                 </div>
                 <div class="social-proof-card">
                     <p class="social-proof-card__title">Away</p>
-                    <p class="social-proof-card__heading styled-heading">Bringing the ideal suitcase to market with Slack.</p>                    <img class="social-proof-card__figure" src="https://images.pexels.com/photos/1478477/pexels-photo-1478477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p class="social-proof-card__heading">Bringing the ideal suitcase to market with Slack.</p>                    <img class="social-proof-card__figure" src="https://images.pexels.com/photos/1478477/pexels-photo-1478477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
                     <p class="social-proof-card__link"><a href="#0">READ STORY</a></p>
                 </div>
             </div>
-        </div>
-        <!-- get started form -->
+        </section>
+    </main>
+    <!-- get started form -->
+    <section class="trial-callout">
         <form class="trial-form" action="https://www.freecodecamp.com/email-submit" target="_self">
-            <p class="trial-form__text styled-heading">Try Slack with your team for free</p>
+            <p class="trial-form__text">Try Slack with your team for free</p>
             <input id="submit-get-started" class="trial-form__input" type="submit" value="GET STARTED">
         </form>
-    </main>
+    </section>
     <!-- footer nav -->
-    <footer class="footer-wrapper">
-        <a name="about"></a>
+    <footer id="about" class="footer-wrapper">
         <div class="footer-grid-wrapper">
             <!-- nav items -->
             <div class="link-box">
                 <p class="link-box__title">COMPANY</p>
-                <ul>
-                    <li class="link-box__link">About Us</li>
-                    <li class="link-box__link">Careers</li>
-                    <li class="link-box__link">Blog</li>
-                    <li class="link-box__link">Press</li>
-                </ul>
+                <a href="#0" class="link-box__link link">About Us</a><br>
+                <a href="#0" class="link-box__link link">Careers</a><br>
+                <a href="#0" class="link-box__link link">Blog</a><br>
+                <a href="#0" class="link-box__link link">Press</a><br>
             </div>
             <div class="link-box">
                 <p class="link-box__title">PRODUCT</p>
-                <ul>
-                    <li class="link-box__link">Customer Stories</li>
-                    <li class="link-box__link">Pricing</li>
-                    <li class="link-box__link">Security</li>
-                    <li class="link-box__link">Why Company?</li>
-                </ul>
+                <a href="#0" class="link-box__link link">Customer Stories</a><br>
+                <a href="#0" class="link-box__link link">Pricing</a><br>
+                <a href="#0" class="link-box__link link">Security</a><br>
+                <a href="#0" class="link-box__link link">Why Us?</a><br>
             </div>
         </div>
         <div class="attribution--centered">
