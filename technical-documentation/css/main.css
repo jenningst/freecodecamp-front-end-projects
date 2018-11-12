@@ -10,23 +10,91 @@ Modifier = .block__element--modifier / .block--modifier
 
 /* Blocks *********************************************************************/
 nav {
+    /* background: #4c5264; */
+    background: white;
+}
+
+.top-navbar {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    background: #4c5264;
+}
+
+.sidebar-logo-wrapper {
+    height: 70px;
     background: #4c5264;
 }
 
 .main-section {
-    color: #373737;
+    margin-left: 30px;
+    padding-bottom: 30px;
+    color: #f2f2f2;
+}
+
+.method-list-item {
+    display: flex;
 }
 
 /* Elements *******************************************************************/
+.sidebar__topic-section {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+}
 
+.main-logo {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-section__header {
+    padding-bottom: 1.5rem;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.main-section__code {
+    display: block;
+    width: 97%;
+    line-height: 2;
+    background: #272b2d;
+    color: #bbe763;
+}
+
+.method-list-item__label {
+    margin-right: 10px;
+    font-weight: 700;
+}
 
 /* Modifiers ******************************************************************/
 
+
+/* Flex Styles ***************************************************************/
+.sidebar-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* Generic Styles ************************************************************/
 body {
     margin: 0px;
     color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-navbar {
+    padding-left: 2%;
+}
+
+.top-navbar__header {
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
 .sidebar {
@@ -39,12 +107,46 @@ body {
     overflow-x: hidden;
 }
 
+.sidebar-main {
+    margin-left: 15px;
+}
+
+.sidebar-header-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fd4e00;
+    font-weight: 700;
+}
+
+.sidebar a:link {
+    text-decoration: none;
+    color:#373737;
+}
+
+.sidebar a:hover {
+    font-weight: 600;
+}
+
+.sidebar a:visited {
+    color: #373737;
+}
+
 .main {
     margin-left: 160px;
     background: #2b2f3e;
     height: 100%;
 }
 
-.main-section {
-    color: #f2f2f2;
+.main-document {
+    padding-top: 110px;
+}
+
+/* Media Queries ************************************************************/
+
+@media (max-width: 768px) {
+    .sidebar-main {
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
 }

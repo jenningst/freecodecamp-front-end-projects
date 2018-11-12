@@ -11,80 +11,122 @@
     
     <!-- styles -->
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
     <title>GolfR API Documentation</title>
 </head>
 <body>
-    <!-- left-side navigation -->
+    <!-- sidebar -->
     <nav id="navbar" class="sidebar">
-        <header class="sidebar__header-section">
-            <p class="header-description">Header Desc.</p>
-        </header>
-        <ul class="sidebar__topic-section">
-            <li class="topic-bar__link"><a href="#create-user" class="nav-link">Create User</a></li>
-            <li class="topic-bar__link"><a href="#update-user" class="nav-link">Update User</a></li>
-            <li class="topic-bar__link"><a href="#delete-user" class="nav-link">Delete User</a></li>
-            <li class="topic-bar__link"><a href="#create-score" class="nav-link">Create Score</a></li>
-            <li class="topic-bar__link"><a href="#delete-score" class="nav-link">Delete Score</a></li>
-        </ul>
+        <div class="sidebar-logo-wrapper">
+            <img class="main-logo" src="assets/golfr-logo-white.svg" alt="golfr logo">
+        </div>
+        <div class="sidebar-header-wrapper sidebar-main">
+            <header class="sidebar__header-section">REFERENCE</header>
+        </div>
+        <div class="sidebar-topic-wrapper sidebar-main">
+            <ul class="sidebar__topic-section">
+                <li class="topic-bar__link"><a href="#create_user" class="nav-link">Create User</a></li>
+                <li class="topic-bar__link"><a href="#update_user" class="nav-link">Update User</a></li>
+                <li class="topic-bar__link"><a href="#delete_user" class="nav-link">Delete User</a></li>
+                <li class="topic-bar__link"><a href="#create_score" class="nav-link">Create Score</a></li>
+                <li class="topic-bar__link"><a href="#delete_score" class="nav-link">Delete Score</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- right-side main doco -->
     <main id="main-doc" class="main">
-        <section class="main-section">
-            <header id="create-user" class="main-section__header">Create User</header>
-            <p class="main-section__content">Represents user details.</p>
-            <code class="main-section__code">https://api/user</code>
-            <ul class="main-section__ul">
-                <li>id</li>
-                <li>fname</li>
-                <li>lname</li>
-                <li>email</li>
-            </ul>
-        </section>
-        <section class="main-section">
-            <header id="update-user" class="main-section__header">Update User</header>
-            <p class="main-section__content">Represents user details.</p>
-            <code class="main-section__code">https://api/user</code>
-            <ul class="main-section__ul">
-                <li>id</li>
-                <li>fname</li>
-                <li>lname</li>
-                <li>email</li>
-            </ul>
-        </section>
-        <section class="main-section">
-            <header id="delete-user" class="main-section__header">Delete User</header>
-            <p class="main-section__content">Represents user details.</p>
-            <code class="main-section__code">https://api/user</code>
-            <ul class="main-section__ul">
-                <li>id</li>
-                <li>fname</li>
-                <li>lname</li>
-                <li>email</li>
-            </ul>
-        </section>
-        <section class="main-section">
-            <header id="create-score" class="main-section__header">Create Score</header>
-            <p class="main-section__content">Represents user details.</p>
-            <code class="main-section__code">https://api/user</code>
-            <ul class="main-section__ul">
-                <li>id</li>
-                <li>fname</li>
-                <li>lname</li>
-                <li>email</li>
-            </ul>
-        </section>
-        <section class="main-section">
-            <header id="delete-score" class="main-section__header">Delete Score</header>
-            <p class="main-section__content">Represents user details.</p>
-            <code class="main-section__code">https://api/user</code>
-            <ul class="main-section__ul">
-                <li>id</li>
-                <li>fname</li>
-                <li>lname</li>
-                <li>email</li>
-            </ul>
-        </section>
+        <!-- top navigation -->
+        <nav class="top-navbar">
+            <p class="top-navbar__header">API Documentation</p>
+        </nav>
+        <div class="main-document">
+            <section id="create_user" class="main-section">
+                <header class="main-section__header">Create User</header>
+                <hr>
+                <p class="main-section__content">Creates a new user object.</p>
+                <code class="main-section__code">https://golf.api.com/user</code>
+                <h3 class="main-section__subheader">User Attributes</h3>
+                <ul class="main-section__ul">
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">fname</p>
+                        <p class="method-list-item__description">The first name of the user.</p>
+                    </li>
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">lname</p>
+                        <p class="method-list-item__description">The last name of the user.</p>
+                    </li>
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">email</p>
+                        <p class="method-list-item__description">The Iemail of the user.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="update_user"class="main-section">
+                <header class="main-section__header">Update User</header>
+                <hr>
+                <p class="main-section__content">Updates a user object.</p>
+                <code class="main-section__code">https://golf.api.com/user</code>
+                <h3 class="main-section__subheader">User Attributes</h3>
+                <ul class="method-list">
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">userid</p>
+                        <p class="method-list-item__description">The ID of an existing user that will receive a score in this request.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="delete_user" class="main-section">
+                <header class="main-section__header">Delete User</header>
+                <hr>
+                <p class="main-section__content">Deletes a user object.</p>
+                <code class="main-section__code">https://golf.api.com/user</code>
+                <h3 class="main-section__subheader">User Attributes</h3>
+                <ul class="method-list">
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">userid</p>
+                        <p class="method-list-item__description">The ID of an existing user that will receive a score in this request.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="create_score" class="main-section">
+                <header class="main-section__header">Create Score</header>
+                <hr>
+                <p class="main-section__content">Create a new score object.</p>
+                <code class="main-section__code">https://golf.api.com/user</code>
+                <h3 class="main-section__subheader">Score Attributes</h3>
+                <ul class="method-list">
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">userid</p>
+                        <p class="method-list-item__description">The ID of an existing user that will receive a score in this request.</p>
+                    </li>
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">datetime</p>
+                        <p class="method-list-item__description">The date and time when the score was received.</p>
+                    </li>
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">score</p>
+                        <p class="method-list-item__description">The score of the user.</p>
+                    </li>
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">par</p>
+                        <p class="method-list-item__description">The par for the course where the score was received.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="delete_score" class="main-section">
+                <header class="main-section__header">Delete Score</header>
+                <hr>
+                <p class="main-section__content">Delete a score object.</p>
+                <code class="main-section__code">https://golf.api.com/user</code>
+                <h3 class="main-section__subheader">Score Attributes</h3>
+                <ul class="main-section__ul">
+                    <li class="method-list-item">
+                        <p class="method-list-item__label">scoreid</p>
+                        <p class="method-list-item__description">The score ID for the score to be deleted.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 </body>
 </html>
